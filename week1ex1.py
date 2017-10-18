@@ -1,3 +1,13 @@
+def main():
+    print("please insert a string")
+    s1 = input()
+    print("please insert other string")
+    s2 = input()
+    combineStr(s1, s2)
+
+    
+
+
 def combineStr(str1, str2):
     str1.split()
     str2.split()
@@ -14,7 +24,9 @@ def combineStr(str1, str2):
             str3.append(str1[i])
         else:
             str3.append(str2[i])
-
-    print(str3)
-
-combineStr('ola', 'adeus')
+            
+    strfinal = ''.join(str3)
+    print(strfinal)
+    
+if __name__== "__main__":
+  main()
