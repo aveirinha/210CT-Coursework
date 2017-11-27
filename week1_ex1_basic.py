@@ -13,7 +13,7 @@ def main():
         except ValueError:
             print("Sorry, that is not a string")
 
-        if(type(s1) == str):
+        if(type(s1) == str and len(s1) >0):
             break
 
     while True:
@@ -23,7 +23,7 @@ def main():
         except ValueError:
             print("Sorry, that is not a string")
 
-        if(type(s2) == str):
+        if(type(s2) == str and len(s2) > 0):
             break
     
     strfinal = combineStr(s1, s2)
@@ -54,4 +54,6 @@ def combineStr(str1, str2):
     print(strfinal)
     
 if __name__== "__main__":
-  main()
+    tester = TestMyMethods()
+    tester.test1stIsSmaller()
+    main()

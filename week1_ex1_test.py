@@ -1,5 +1,4 @@
 import unittest
-#include "week1_ex1_basic.py"
 
 class TestMyMethods(unittest.TestCase):
 
@@ -10,7 +9,10 @@ class TestMyMethods(unittest.TestCase):
        self.assertEqual(combineStr('bye', 'hey'), 'bhyeyy')
 
     def test1stIsBigger(self):
-       self.assertEqual(combineStr('goodmorning', 'hey'), 'ghoeoydmorning') 
+       self.assertEqual(combineStr('goodmorning', 'hey'), 'ghoeoydmorning')
+
+tester = TestMyMethods()
+tester.test1stIsSmaller()
 
 if __name__ == '__main__':
     unittest.main()
