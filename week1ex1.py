@@ -1,14 +1,35 @@
-def main():
-    print("please insert a string")
-    s1 = input()
-    print("please insert other string")
-    s2 = input()
-    combineStr(s1, s2)
+"""This program recieves two strings from the user
+and combines them in the method combineStr and then prints it"""
 
+def main():
+    """The following two while loops are responsible for
+    checking that the input is valid for this program"""
+    while True:
+        try:
+            s1 = str(input("please insert a string"))
+
+        except ValueError:
+            print("Sorry, that is not a string")
+
+        if(type(s1) == str):
+            break
+
+    while True:
+        try:
+            s2 = str(input("please insert a string"))
+
+        except ValueError:
+            print("Sorry, that is not a string")
+
+        if(type(s2) == str):
+            break
     
+    strfinal = combineStr(s1, s2)
 
 
 def combineStr(str1, str2):
+    """This method recives two strings,combines them
+    prints the combination and returns it"""
     str1.split()
     str2.split()
     str3 = []
