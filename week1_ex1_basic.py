@@ -1,7 +1,7 @@
 """This program recieves two strings from the user
 and combines them in the method combineStr and then prints it"""
 
-#include "week1_ex1_test.py"
+from week1_ex1_test import *
 
 def main():
     """The following two while loops are responsible for
@@ -54,6 +54,4 @@ def combineStr(str1, str2):
     print(strfinal)
     
 if __name__== "__main__":
-    tester = TestMyMethods()
-    tester.test1stIsSmaller()
     main()
