@@ -29,7 +29,9 @@ def main():
 
 def combineStr(str1, str2):
     """This method recives two strings,combines them
-    prints the combination and returns it"""
+    prints the combination and returns it.
+    It splits the strings into lists, creates a new one using a letter
+    from str1 and str2 and covert the final list into a string again"""
     str1.split()
     str2.split()
     str3 = []
