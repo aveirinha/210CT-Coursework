@@ -1,6 +1,8 @@
 """This program recieves two strings from the user
 and combines them in the method combineStr and then prints it"""
 
+#include "week1_ex1_test.py"
+
 def main():
     """The following two while loops are responsible for
     checking that the input is valid for this program"""
