@@ -1,20 +1,20 @@
-ADDPOLINOMIALS(p1, deg1, p2, deg2)
-
-	IF deg1 < pdeg2
-		deg3 <- deg2
-
-		FOR i <- deg1 TO 0
-			p3[i] <- p1[i] + p2[i]
-		FOR i <- deg3 TO deg1+1
-			p3[i] <- p2[i] 
-
-		RETURN p3, deg3
+ADD_POLINOMIALS(degree1, p1, degree2, p2)
+	
+	IF degree1 < degree2
+		degree3 <- degree2
 
 	ELSE
-		deg3 <- deg1
-		FOR i <- deg2 TO 0
-			p3[i] <- p1[i] + p2[i]
-		FOR i <- deg3 TO deg2+1
-			p3[i] <- p1[i] 
+		degree3 <- degree1
 
-		RETURN p3, deg3
+	FOR i <- degree3 TO 1
+
+		IF degree1 - i > 0 AND degree2 - i > 0
+			p3[i] <- p1[i] + p2[i]
+
+		ELSE IF degree1 - i > 0
+			p3[i] <- p1[i]
+
+		ELSE
+			p3[i] <- p2[i]
+	
+	RETURN p3, degree3
