@@ -13,3 +13,6 @@ ISPALINDROME(word)
 			END WHILE
 
 	RETURN is_pal
+	
+	
+Complexity: O(n/2)
