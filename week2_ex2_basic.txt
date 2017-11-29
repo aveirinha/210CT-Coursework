@@ -1,0 +1,15 @@
+ISPALINDROME(word)
+	i <- 0
+	j <- word[LENGHT(WORD)]
+	is_pal <- TRUE
+
+	WHILE i < j
+		IF word[i] = word[j]
+			i <- i + 1
+			j <- j + 1
+
+		ELSE
+			is_pal <- FALSE
+			END WHILE
+
+	RETURN is_pal
