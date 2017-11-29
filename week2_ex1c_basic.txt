@@ -1,6 +1,8 @@
 DERIVATE_POLINOMIALS(pol, deg)
+
    FOR i <- 1 TO deg                        //because de last element is not revant
       pol_deriv[i] <- pol[i] * i
+
    RETURN pol_deriv
 
 

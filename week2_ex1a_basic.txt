@@ -1,17 +1,20 @@
-RECEIVE degree1 FROM (INTEGER)KEYBOARD
+ADDPOLINOMIALS(p1, deg1, p2, deg2)
 
-RECEIVE p1 FROM (ARRAY)KEYBOARD
+	IF deg1 < pdeg2
+		deg3 <- deg2
 
-RECEIVE degree2 FROM (INTEGER)KEYBOARD
+		FOR i <- deg1 TO 0
+			p3[i] <- p1[i] + p2[i]
+		FOR i <- deg3 TO deg1+1
+			p3[i] <- p2[i] 
 
-RECEIVE p2 FROM (ARRAY)KEYBOARD
+		RETURN p3, deg3
 
+	ELSE
+		deg3 <- deg1
+		FOR i <- deg2 TO 0
+			p3[i] <- p1[i] + p2[i]
+		FOR i <- deg3 TO deg2+1
+			p3[i] <- p1[i] 
 
-IF p1 < p2
-	p3 <- p2
-
-ELSE
-	p3 <- p1
-
-
-FOR i <- 1 TO LENGTH(
+		RETURN p3, deg3
